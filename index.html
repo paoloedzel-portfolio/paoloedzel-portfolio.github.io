@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myAppPortfolio">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>PaoloEdzel - iPortfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <script src="assets/js/angulajs.min.js"></script>
+</head>
+
+<body ng-controller="ModalController" class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Paolo Edzel</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> -->
+      <a href="https://web.facebook.com/akosipaoloedzel" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://github.com/edpa92" class="GitHub"><i class="bi bi-github"></i></a>
+      <!-- <a href="#" class="google-plus"><i class="bi bi-skype"></i></a> -->
+      <a href="https://linkedin.com/in/pgedzel92" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+               <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+                <li><a href="#">Deep Dropdown 3</a></li>
+                <li><a href="#">Deep Dropdown 4</a></li>
+                <li><a href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+          </ul>
+        </li> -->
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg2.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Paolo Edzel, EDPSE</h2>
+        <p>I'm a <span class="typed" data-typed-items="Electronic Data Processing Specialist Eligible(EDPSE), Freelancer, Software Developer, Systems Analyst">Systems Analyst </span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Hello, My name is Paolo Edzel, I earned a Bachelor's Degree in Computer Science from the University of Southern Mindanao.
+          Experienced Android Application Developer with expertise in Web Application Development, Designing and coding.
+          Seeking a position with a growing company where I can utilize my skills to the best of my ability for its benefit as well as for personal growth.
+          Keen on learning new technologies and looking forward for a bright and interesting career. Always try to be sincere and hard working, punctual & honest towards work assigned to me.
+          My hobbies include reading e-books, and creating happy moments with my family.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid img-thumbnail rounded-circle" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>UI/UX Designer &amp; Web Developer.</h2>
+            <p class="fst-italic py-3">
+              I started my programming career 10 years ago as a Web and Android Application Developer, specializing in C# ASP.NET MVC5, PHP Laravel, and Android Kotlin. Now, I have over 10 years of programming experience and project managment experience. I have worked for several companies, striving to build large-scale business applications and hoping to deliver better solutions.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>Oct 18, 1992</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>myportfolio-66e05.firebaseapp.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+63 9164551631</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Kabacan, SOCCSKSARGEN 9707, Philippines</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>31</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master (On Going)</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>edpa92@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              Recently I have successfully Passed my ICT Computer Programming Proficiency Examination conducted by Civil Service Commision (CSC) Region XI, The ICT Specialist Proficiency Examination is designed to evaluate the competence of an individual to perform programming or systems analysis and design functions. This is pursuant to PD 1408, I have earned my Certificate of Eligibilty by passing the said exam with an Average total score of 93.05%. 
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Total Clients</strong></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>My Skill Matrix</h2>
+        <p>Discover my expertise and technical proficiency, which highlights my capabilities across various technologies and domains. This structured overview showcases my strengths in programming languages, frameworks, tools, and methodologies, helping you understand how my skills align with your project needs.
+          Whether it's web development, mobile applications, backend systems, or database management, my skill set is backed by hands-on experience and continuous learning.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Web Application Development</span> <i class="val">87%</i></span>
+              <small>Html5,CSS3,JQuery, AngulaJS, Bootstrap,PHP Laravel,C# Asp.net MVC5, GitHub</small><br>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            
+            <div class="progress">
+              <span class="skill"><span>Android Application Development</span> <i class="val">75%</i></span>
+              <small>Kotlin & Java, JetPack, Android Studio</small>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            
+            <div class="progress">
+              <span class="skill"><span>Cross platform Mobile Application Development</span> <i class="val">63%</i></span>
+              <small>Flutter SDK & Dart</small>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Desktop Business Application Development</span> <i class="val">83%</i></span>
+              <small>WPF and Windows Form, C# </small>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Databases</span> <i class="val">77%</i></span>
+              <small>MSSQL & MySQL, Firebase NoSQL Database</small>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Graphics Design</span> <i class="val">63%</i></span>
+              <small>Canva, Adobe Photoshop</small>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>I started my programming career 10 years ago as a Web and Android Application Developer, specializing in C# ASP.NET MVC5, PHP Laravel, and Android Kotlin. Now, I have over 10 years of programming experience and project managment experience. I have worked for several companies, striving to build large-scale business applications and hoping to deliver better solutions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="resume-item pb-0">
+              <h3 class="resume-title">Eligibility</h3>
+              <p><em>Recently I have successfully Passed my ICT Computer Programming Proficiency Examination conducted by Civil Service Commision (CSC) Region XI, The ICT Specialist Proficiency Examination is designed to evaluate the competence of an individual to perform programming or systems analysis and design functions. This is pursuant to PD 1408, I have earned my Certificate of Eligibilty by passing the said exam with an Average total score of 93.05%.</em></p>
+             
+              <ul>
+                <li>Electronic Data Processing Specialist Eligibility (EDPSE)</li>
+                <li>Taken: May 23, 2023</li>
+                <li>Average Score: 93.05%</li>
+              </ul> 
+              <!-- <a href="#" id="popoverTrigger" 
+              
+              data-bs-toggle="popover" 
+              data-bs-html="true" 
+              data-bs-content="<img width='500' src='assets/img/csc eligibility.jpg' alt='Eligibility Certificate' class=''>">
+                <img class="img-fluid img-thumbnail w-25" src="assets/img/csc eligibility.jpg" alt="">
+              </a>
+               -->
+             <section class="portfolio section light-background">
+              <div class="container">
+                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+                  <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+                    <div class="portfolio-content h-100">
+                      <!-- <img src="assets/img/portfolio/app6.png" class="img-fluid" alt=""> -->
+                      <img class="img-fluid img-thumbnail" src="assets/img/csc eligibility.jpg" alt="">
+                      <div class="portfolio-info">                        
+                        <a href="assets/img/csc eligibility.jpg" title="Electronic Data Processing Specialist Eligibility Certificate issued by Civil Service Commision" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </section>
+
+
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master in  &amp; Information Systems</h4>
+              <h5>2024 - On going</h5>
+              <p><em>University of Southern Mindanao</em></p>
+              <p>Kabacan, Cotabato</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Bachelor of Science in &amp; Computer Science</h4>
+              <h5>2010 - 2014</h5>
+              <p><em>University of Southern Mindanao</em></p>
+              <p>Kabacan, Cotabato</p>
+            </div><!-- Edn Resume Item -->
+
+            
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>INFORMATION SYSTEMS ANALYST</h4>
+              <p><em> Department of ICT REGION XII eGovPh Project, Philippines </em></p>
+              <h5>JAN 2024 - Present</h5>
+              <!-- <ul>
+                <li>Gather and analyze business requirements from steakholders.</li>
+                <li>Design system workflows, wireframes, and specifications of the eGovPh eLGU platform.</li>                
+                <li>Recommend improvements for existing systems features and architectures.</li>
+                <li>Perform eGovPh platform system testing, debugging, and troubleshooting to ensure efficiency.</li>
+                <li>Validate new system features meet requirements needs.</li>
+                <li>Provide technical support to Region XII LGU system end-users and resolve system-related issues.</li>
+                <li>Develop training manuals and conduct workshops for LGU system end-users.</li>
+                <li>Maintain eLGU system documentation, including user guides, technical specifications, and change logs.</li>
+                <li>Communicate technical solutions to non-technical stakeholders from all LGU of Region XII.</li>
+                <li>Train project staff and beneficiaries of the System.</li>
+                <li>Works with LGUs, and other agencies for IT modernization projects.</li>
+              </ul> -->
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>PROJECT DEVELOPMENT OFFICER</h4>
+              <p><em>Department of ICT REGION XII iBPLSystem Project, Philippines </em></p>
+              <h5>JULY 2022 - DEC 2023</h5>
+              <!-- <ul>
+                <li>Develope the Regional Website of the Deparment.</li>
+                <li>Write, test, and debug code of the Regional Project Information systems using programming languages like C#, PHP, or JavaScript .</li>
+                <li>Ensure integration between different applications, databases, and third-party tools.</li>
+                <li>Develop custom software solutions to improve government services.</li>
+                <li>Train project staff and beneficiaries on project goals and implementation.</li>
+                <li>Works with LGUs, and other agencies for IT modernization projects.</li>
+              </ul> -->
+            </div><!-- Edn Resume Item -->
+            <div class="resume-item">
+              <h4>MANAGER/Proprietor</h4>
+              <p><em>Hayate Softcom Software and Printing Solution</em></p>
+              <h5>FEB 2016 - JULY 2022</h5>
+              <!-- <ul>
+                <li>The Business provides printed layout output, from small to large Format printing materials.</li>
+                <li>Helping the community by providing the ICT services that they cannot access due to the digital divide.</li>
+                <li>The business serves as ICT provider of the community specifically accessing e-Gov services</li>
+              </ul> -->
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>FREELANCER ANDROID & WEB APPLICATION DEVELOPER</h4>
+              <p><em>Hayate Softcom Software and Printing Solution</em></p>
+              <p><em>Various Online Clients</em></p>
+              <h5>SEPT 2014 to JAN 2016</h5>
+              <!-- <ul>
+                <li>The Business provides printed layout output, from small to large Format printing materials.</li>
+                <li>Helping the community by providing the ICT services that they cannot access due to the digital divide.</li>
+                <li>The business serves as ICT provider of the community specifically accessing e-Gov services</li>
+              </ul> -->
+            </div><!-- Edn Resume Item -->
+            <div class="resume-item">
+              <h4>WEB DEVELOPER AND UI/UX DESIGNER</h4>
+              <p><em>The Basement Designer Inc.</em></p>
+              <h5>MAY 2014 to SEPT 2014</h5>
+              <!-- <ul>
+                <li>The Business provides printed layout output, from small to large Format printing materials.</li>
+                <li>Helping the community by providing the ICT services that they cannot access due to the digital divide.</li>
+                <li>The business serves as ICT provider of the community specifically accessing e-Gov services</li>
+              </ul> -->
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>SOFTWARE DEVELOPER SPECIALIZE IN JAVA (OJT)</h4>
+              <p><em>GREPPOO INC.</em></p>
+              <h5>April 2012 to May 2012</h5>
+              <!-- <ul>
+                <li>The Business provides printed layout output, from small to large Format printing materials.</li>
+                <li>Helping the community by providing the ICT services that they cannot access due to the digital divide.</li>
+                <li>The business serves as ICT provider of the community specifically accessing e-Gov services</li>
+              </ul> -->
+            </div><!-- Edn Resume Item -->
+            
+           
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    
+     <!-- Services Section -->
+     <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>
+          Looking for a Skilled Developer to Build Your Website or Web App?
+Do you need a custom website or web app system to streamline your business operations and reduce paperwork? Whether you're a startup, small business, or company, we’ve got you covered! We also develop capstone and thesis system projects for students.
+        </p>  
+        </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Business Web App Development & Solutions</a></h4>
+              <p class="description">We developed Tailored systems to fit your business needs. HRMS, Information Systems, Management Systems, Online Booking, and more.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Professional Website Creation</a></h4>
+              <p class="description">Designed for marketing and brand visibility. such as your own Web-Portfolio or Business or Organizations Website</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-cart"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">E-Commerce Websites</a></h4>
+              <p class="description">We can build your own online store, like Shopify and more.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Company Office Systems</a></h4>
+              <p class="description">Automate processes and reduce workloads efficiently.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-cloud"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Local-to-Online System Migration</a></h4>
+              <p class="description">Upgrade your offline system to a cloud-based solution.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-book"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Student Capstone & Thesis Projects</a></h4>
+              <p class="description">Web, Mobile, Destop app development for academic requirements.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Explore my past projects and see how I bring ideas to life through innovative and efficient solutions. Each project showcases my expertise in web development, mobile applications, and software solutions, demonstrating my ability to create scalable, user-friendly, and high-performing applications..</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-mobile">Mobile App</li>
+            <li data-filter=".filter-web">Web App</li>
+            <li data-filter=".filter-desktop">Desktop App</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app6.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>LGU Makilala Website</h4>
+                  <p>Local Gov Unit of Makilala Website using eLGU eNEWS CMS System Moduel</p>
+                  <a href="assets/img/portfolio/app6.png" title="Local Gov Unit of Makilala Website using eLGU eNEWS System Moduel" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a ng-click="openModal(
+                    'LGU Makilala Official Website', 
+                    ' The LGU Makilala, Cotabato website serves as the official digital platform for providing government services, news, and updates to the community. It ensures transparency, accessibility, and efficient public service delivery through online resources, announcements, and citizen engagement. Designed to keep residents informed, the website offers essential information on local governance, policies, and community programs.',
+                    'LGU Makilala Official Website',
+                    'Category: Web App',
+                    'Project Date: Nov- Dec 2024',
+                    'https://elgu-makilala-cotabato-news.e.gov.ph',
+                    'Website Link',
+                    'assets/img/portfolio/app6.png',
+                    'assets/img/portfolio/app6/app6.1.png',
+                    'assets/img/portfolio/app6/app6.2.png',
+                    'assets/img/portfolio/app6/app6.3.png',
+                    'assets/img/portfolio/app6/app6.4.png')" 
+                    title="More Details" class="details-link">
+                    <i class="bi bi-link-45deg"></i></a></div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Retailer</h4>
+                  <p>Retailer: A Smart Solution for E-Pin and Mobile Load Management</p>
+                  <a href="assets/img/portfolio/app1.png" title="Retailer: A Smart Solution for E-Pin and Mobile Load Management" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a ng-click="openModal(
+                    'Retailer', 
+                    ' A Smart Solution for E-Pin and Mobile Load Management. A native Android mobile application designed to efficiently manage, distribute, and track sales of E-Pins and mobile loads across all satellite TV and mobile networks in the Philippines.
+                    The app has a special features called IAmServer where you can manage and make sales transactions on your Computer Browser as long as both devices are connected in the same network.
+                    <br/>Developed using Android SDK JetPack, Kotlin, Android Studio.',
+                    'Retailer',
+                    'Category: Mobile App',
+                    'Project Date: 2016-2022',
+                    'https://drive.google.com/drive/folders/1fk5oT2Rr1wfBg2d8bN3-omh4flX5qF0Q?usp=sharing',
+                    'Try the Demo App',
+                    'assets/img/portfolio/app1.png',
+                    'assets/img/portfolio/app1/auth.png',
+                    'assets/img/portfolio/app1/dashboard.png',
+                    'assets/img/portfolio/app1/navigation.png',
+                    'assets/img/portfolio/app1/sales.png')" 
+                    title="More Details" class="details-link">
+                    <i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app2.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>SEPTS</h4>
+                  <p>Student Expert Pool Tutorial System (SEPTS) is a School Management System</p>
+                  <a href="assets/img/portfolio/app2.png" title="Student Expert Pool Tutorial System (SEPTS)" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a ng-click="openModal(
+                    'SEPTS', 
+                    'Student Expert Pool Tutorial System (SEPTS) is a School Management System (SMS) designed to track and manage various aspects of a school operations, particularly focusing on instructors activity, teaching progress, student information and learning progress.
+                    👨‍💻 Developed using: ASP.Net MVC5, C#, MSSql Server, Visual Studio, Bootstrap
+                    Features:
+                    ✅Student population monitoring per class section
+                    ✅Student Learning Progress monitoring
+                    ✅Instructor IMS and Topics Monitoring 
+                    ✅Instructor Teaching Progress with customizable Progress basis
+                    ✅Online quiz with timer
+                    ✅Instructor-Student Online Chat with Video Call',
+                    'Student Expert Pool Tutorial System (SEPTS)',
+                    'Category: Web App',
+                    'Project Date: Nov 2023 - Dec 2023',
+                    'https://www.linkedin.com/in/pgedzel92/details/projects/',
+                    'More Details',
+                    'assets/img/portfolio/app2.png',
+                    'assets/img/portfolio/app2/1.png',
+                    'assets/img/portfolio/app2/3.png',
+                    'assets/img/portfolio/app2/4.png',
+                    'assets/img/portfolio/app2/5.png')" 
+                    title="More Details" class="details-link">
+                    <i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app3.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>OADS</h4>
+                  <p>Senior High School - Online Admission System (OADS)</p>
+                  <a href="assets/img/portfolio/app3.png" title="Senior High School - Online Admission System (OADS)" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-desktop">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app4.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>SVRML</h4>
+                  <p>SVRML | Service Vehicle Repair and Maintenance Logging System</p>
+                  <a href="assets/img/portfolio/app4.png" title="SVRML | Service Vehicle Repair and Maintenance Logging System" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app5.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>O-SEIS</h4>
+                  <p>ORGANIZATION Equipment and Supplies Inventory System</p>
+                  <a href="assets/img/portfolio/app5.png" title="ORGANIZATION Equipment and Supplies Inventory System" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+           
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="portfolioDetailsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen img-thumbnail">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">{{ modalTitle }}</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                  <!-- Portfolio Details Section -->
+                  <section id="portfolio-details" class="portfolio-details section">
+                    <div class="container" data-aos="fade-up" data-aos-delay="100">
+                      <div class="row gy-4">
+                        <div class="col-lg-8">
+                          <div class="portfolio-details-slider swiper init-swiper">
+                            <script type="application/json" class="swiper-config">
+                              {
+                                "loop": true,
+                                "speed": 600,
+                                "autoplay": {
+                                  "delay": 5000
+                                },
+                                "slidesPerView": "auto",
+                                "pagination": {
+                                  "el": ".swiper-pagination",
+                                  "type": "bullets",
+                                  "clickable": true
+                                }
+                              }
+                            </script>
+
+                            <div class="swiper-wrapper align-items-center">
+
+                              <div class="swiper-slide">
+                                <img class="d-block w-100 modal-img" ng-src="{{ modalImg1 }}" alt="">
+                              </div>
+
+                              <div class="swiper-slide">
+                                <img class="d-block w-100 modal-img" ng-src="{{ modalImg2 }}" alt="">
+                              </div>
+
+                              <div class="swiper-slide">
+                                <img  class="d-block w-100 modal-img" ng-src="{{ modalImg3 }}" alt="">
+                              </div>                              
+                              <div class="swiper-slide">
+                                <img  class="d-block w-100 modal-img" ng-src="{{ modalImg4 }}" alt="">
+                              </div>
+
+                              <div class="swiper-slide">
+                                <img class="d-block w-100 modal-img" ng-src="{{ modalImg5 }}" alt="">
+                              </div>
+
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                          <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Project information</h3>
+                            <ul>
+                              <li><strong> {{ modalCategory }}</strong></li>
+                              <li><strong> {{ modalClient }}</strong></li>
+                              <li><strong> {{ modalProjectDate }}</strong></li>
+                              <li><strong><a target="_blank" ng-href="{{ modalProjectURL }}"> {{ modalProjectURLText }}</a></strong></li>
+                            </ul>
+                          </div>
+                          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+                            <h2>{{ modalContentTitle }}</h2>
+                            <p ng-bind-html="modalContent">
+                             
+                            </p>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </section><!-- /Portfolio Details Section -->
+            </div>
+            <div class="modal-footer  d-flex justify-content-center">
+              <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    
+
+    <!-- Testimonials Section -->
+    <!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>We’d love to hear from you! Whether you have questions, inquiries, or feedback, feel free to reach out. You can contact me via email, phone, or by filling out the form below. I will respond as soon as possible.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Kabacan, SOCCSKSARGEN 9707, Philippines</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Via Call</h3>
+                  <p>+63 918-401-6949</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Via Email</h3>
+                  <a href="mailto:edpa92@gmail.com">edpa92@gmail.com</a>
+                </div>
+              </div><!-- End Info Item -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37139.915828056946!2d124.81657140505968!3d7.111440568417674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f88d9ef847ea1d%3A0xfbbc1d48c7ef7972!2sKabacan%2C%20Cotabato!5e1!3m2!1sen!2sph!4v1738330250726!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div></div>
+
+         <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div> <!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Paolo Edzel Portfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <!-- <div class="credits"> -->
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+      </div> -->
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Initialize popover
+    document.addEventListener("DOMContentLoaded", function() {
+        var popoverTrigger = document.getElementById("popoverTrigger");
+        var popover = new bootstrap.Popover(popoverTrigger, {
+            trigger: "hover", // Show on hover
+            placement: "top", // Adjust as needed
+        });
+    });
+
+
+
+    var app = angular.module('myAppPortfolio', []);
+
+    app.controller('ModalController', function($scope, $sce) {
+        $scope.modalTitle = "";
+        $scope.modalContent = "";
+        $scope.modalContentTitle = "";
+        $scope.modalCategory = "";
+        $scope.modalClient = "";
+        $scope.modalProjectDate = "";
+        $scope.modalProjectURL = "";
+        $scope.modalImg1 = "";
+        $scope.modalImg2 = "";
+        $scope.modalImg3= "";
+        $scope.modalImg4 = "";
+        $scope.modalImg5= "";
+        $scope.modalProjectURLText="";
+
+        // Function to update modal content dynamically
+        $scope.openModal = function(title, content, contentTitle, Category, Date, URL, URLTEXT, img1, img2, img3, img4, img5) {
+            $scope.modalTitle = title;
+            $scope.modalContent =$sce.trustAsHtml(content.replace(/\n/g, '<br/>'));
+            $scope.modalContentTitle=contentTitle;
+            $scope.modalCategory=Category;
+            $scope.modalProjectURL=URL;
+            $scope.modalProjectDate=Date;
+            $scope.modalImg1=img1;
+            $scope.modalImg2=img2;
+            $scope.modalImg3=img3;
+            $scope.modalImg4=img4;
+            $scope.modalImg5=img5;
+            $scope.modalProjectURLText=URLTEXT;
+
+            // Open Bootstrap Modal
+            var myModal = new bootstrap.Modal(document.getElementById('portfolioDetailsModal'));
+            myModal.show();
+        };
+    });
+</script>
+
+</body>
+
+</html>
