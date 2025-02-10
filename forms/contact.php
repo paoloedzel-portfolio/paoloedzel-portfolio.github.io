@@ -6,7 +6,7 @@
   * The library should be uploaded to: vendor/php-email-form/php-email-form.php
   * For more info and help: https://bootstrapmade.com/php-email-form/
   */
-  require 'assets/vendor/phpmailer/Exception.phpException.php';
+  require 'assets/vendor/phpmailer/Exception.php';
   require 'PHPMailer/src/PHPMailer.php';
   require 'PHPMailer/src/SMTP.php';
 
