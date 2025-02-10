@@ -36,10 +36,18 @@ use PHPMailer\PHPMailer\Exception;
 
     // Send Email
     $mail->send();
-    echo 'Email sent successfully!';
+    
+
+    
+  header("Location: https://paoloedzel-portfolio.github.io/#contact?msg=send");
+  exit(); // Important to prevent further execution
+
 } catch (Exception $e) {
-  die( "Email could not be sent. Error: {$mail->ErrorInfo}");
-}
+  header("Location: https://paoloedzel-portfolio.github.io/#contact?msg=notsend");
+  exit(); // Important to prevent further execution
+} 
+
+// Redirect to another page
 
 
   // Replace contact@example.com with your real receiving email address
